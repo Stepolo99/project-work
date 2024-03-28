@@ -35,10 +35,9 @@ const Shop = () => {
         </>
     )
 }
-function Card(props:ComponentProps<"div"> & {name:string; img:string; price:number;}) {
-    console.log (props);
-    return (
 
+function Card(props:ComponentProps<"div"> & {name:string; img:string; price:number;}) {
+    return (
         <div className="text-center shadow p-3 mb-5 bg-body-tertiary rounded my">
             <img src={props.img} className="card-img-top" alt="pic" />
             <div className="card-body">
