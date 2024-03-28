@@ -7,7 +7,7 @@ import { useState } from 'react';
 function App() {
 //dentro cart ho il valore corrente con setCart posso aggiornarlo
 //dentro handleClick devo prendere il cart, aggiungere un elemento ed aggiornarlo con setCart
-  const [cart, setCart] = useState([1,2,3]);
+  const [cart, setCart] = useState<number[]>([]);
   function handleClick(product: number) {
     setCart ([...cart, product] );
   }

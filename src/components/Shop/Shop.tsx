@@ -5,7 +5,7 @@ type ShopProps = {
    addToCart: (product: number) => void 
 }
 const Shop = (props: ShopProps) => {
-    console.log (props)
+   
     return (
         <>
             <div className="container text-center">
