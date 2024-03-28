@@ -1,0 +1,12 @@
+body {
+box-sizing: border-box;
+}
+.my {
+    border: 1px solid black;
+    object-fit: cover;
+    min-width: 100%;
+}
+.card-img-top{
+    height: 10rem;
+
+}
