@@ -13,8 +13,7 @@ function App() {
   }
   return (
     <>
-      <Navbar />
-      {cart.length}
+      <Navbar cart={cart}/>
       <Shop addToCart={handleClick} />
     </>
   )

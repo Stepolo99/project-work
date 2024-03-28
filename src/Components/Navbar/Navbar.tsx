@@ -1,7 +1,12 @@
 import React from 'react'
 import './Navbar.css'
 
-const Navbar = () => {
+type NavbarProps = {
+  cart: number[];
+};
+
+const Navbar = (props: NavbarProps) => {
+    console.log(props)
     return (
     <div >
         <nav className="navbar navbar-expand-lg bg-dark mynav" >
@@ -18,8 +23,9 @@ const Navbar = () => {
 
                     </div>    
                 </div>
-                <div className="d-flex justify-content-end">
-                    <img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png" alt="" style={{width: '55px', height: '55px'}} />
+                <div className="d-flex justify-content-end relative">
+                    <img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png" alt="" style={{width: '55px', height: '55px' }} />
+                    <span className='position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger'>{props.cart.length}</span>
                 </div>
             </div>
         </nav>
